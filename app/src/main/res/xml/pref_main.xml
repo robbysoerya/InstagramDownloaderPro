@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <Preference
+            android:defaultValue="@string/defaul_tstorage"
+            android:summary="@string/defaul_tstorage"
+            android:title="Download Location"/>
+        <Preference android:title="Send Feedback"
+            android:key="key_feedback"
+            android:summary="Got any queries? We are happy to help">
+        </Preference>
+        <Preference
+            android:key="key_request"
+            android:title="Request Features"
+            android:summary="You have some request? tell me please"/>
+        <Preference android:title="Version"
+            android:summary="1.0.0"/>
+        <Preference android:title="About"
+            android:key="key_about"/>
+</PreferenceScreen>

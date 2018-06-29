@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "457097329343",
+    "firebase_url": "https://instagramdownloaderpro.firebaseio.com",
+    "project_id": "instagramdownloaderpro",
+    "storage_bucket": "instagramdownloaderpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457097329343:android:7e16317db3c4c0c2",
+        "android_client_info": {
+          "package_name": "com.massurya.instagramdownloaderpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457097329343-9pman1hmuqpi8pc4difueqgpq33olk0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massurya.instagramdownloaderpro",
+            "certificate_hash": "0ff72bf5791121f0c451bb3ad08c64a4061ce533"
+          }
+        },
+        {
+          "client_id": "457097329343-7eod8ebhp17plgf7pmeg3ka2dna6r61c.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "457097329343-7eod8ebhp17plgf7pmeg3ka2dna6r61c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRWEUvzLgmCixmlLZsbohDsNUsPYR_B-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457097329343-7eod8ebhp17plgf7pmeg3ka2dna6r61c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
