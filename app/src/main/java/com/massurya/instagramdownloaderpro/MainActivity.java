@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String link, filename, repost;
     Model model = new Model();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,11 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPaste = findViewById(R.id.btnPaste);
         progressBar = findViewById(R.id.progress);
         imgPlay = findViewById(R.id.imgPlay);
-        AdView mAdView = findViewById(R.id.adView);
-        MobileAds.initialize(this, "ca-app-pub-1318666068774510~8413581419");
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        createInterstitial();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         checkPermission();
 
@@ -222,7 +218,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             mDemoSlider.stopAutoCycle();
             mDemoSlider.addOnPageChangeListener(MainActivity.this);
-
             edtCaption.setText(model.getTitle());
             edtCaption.setVisibility(View.VISIBLE);
             btnSave.setVisibility(View.VISIBLE);
@@ -378,19 +373,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
+
     public void checkPermission() {
 
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
-            !=PackageManager.PERMISSION_GRANTED)
+                != PackageManager.PERMISSION_GRANTED)
 
         {
 
-                ActivityCompat.requestPermissions(this,
-                        new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                        permission);
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    permission);
 
-            }
+        }
     }
 
     @Override
@@ -402,9 +398,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-
                 } else {
 
                     checkPermission();
@@ -415,7 +408,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-        public void getRepost() {
+    public void getRepost() {
 
         if (imgPlay.getVisibility() == View.VISIBLE) {
 
@@ -427,10 +420,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
 
-            if (filename.indexOf('?') > 0) {
-                filename = filename.substring(0, filename.lastIndexOf('?'));
+        if (filename.indexOf('?') > 0) {
+            filename = filename.substring(0, filename.lastIndexOf('?'));
 
-            }
+        }
 
         File direct = new File(Environment.getExternalStorageDirectory()
                 + "/InstagramDownloaderPro/" + filename);
