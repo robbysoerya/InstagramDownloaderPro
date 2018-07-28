@@ -165,13 +165,6 @@
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
-            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-1318666068774510/4351171180" />
-
 
         </LinearLayout>
 
